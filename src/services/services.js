@@ -6,5 +6,5 @@ export const services = {
   fetchTodos: () => todoAPI.get(endpoints.fetchTodos),
   fetchActiveTodo: (id) => todoAPI.get(endpoints.fetchActiveTodo(id)),
   updateTodo: (id, newTodo) => todoAPI.put(endpoints.updateTodo(id), newTodo),
-  deleteTodo: (id) => todoAPI.delete(endpoints.deleteTodo(id)),
+  deleteTodo: (id) => todoAPI.delete(endpoints.deleteTodo(id))
 };

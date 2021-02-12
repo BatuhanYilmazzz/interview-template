@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchHome } from '../../store/actions';
+import { Flex } from 'rebass';
 const HomePage = () => {
   const { homeData, loading } = useSelector((state) => state.home);
   const dispatch = useDispatch();
@@ -9,7 +10,7 @@ const HomePage = () => {
     dispatch(fetchHome());
   }, [dispatch]);
   return (
-    <div>
+    <Flex>
       {loading ? (
         'loading...'
       ) : (
@@ -22,7 +23,7 @@ const HomePage = () => {
           <li>TotalRecovered : {homeData.TotalRecovered}</li>
         </ul>
       )}{' '}
-    </div>
+    </Flex>
   );
 };
 
