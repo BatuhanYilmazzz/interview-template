@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchHome } from '../../store/actions';
+import { fetchHome } from 'store/actions';
 import { Flex } from 'rebass';
 const HomePage = () => {
   const { homeData, loading } = useSelector((state) => state.home);

@@ -1,7 +1,7 @@
 import { takeEvery, put } from 'redux-saga/effects';
 import * as actionTypes from '../types';
 import * as actions from '../actions';
-import { services } from '../../services/services';
+import { services } from 'services/services';
 
 export function* fetchHomeSaga() {
   try {
