@@ -1,6 +1,6 @@
-import todoAPI from './api';
+import API from './api';
 import { endpoints } from './endpoints';
 
 export const services = {
-  fetchAny: () => todoAPI.get(endpoints.any('summary'))
+  fetchAny: () => API.get(endpoints.any('summary'))
 };
